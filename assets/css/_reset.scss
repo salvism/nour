@@ -1,0 +1,27 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Nunito400";
+  line-height: 1.8;
+  color: #666;
+}
+@font-face {
+    font-family: Nunito400;
+    src: url(/assets/fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito600;
+    src: url(/assets/fonts/NunitoSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: Nunito700;
+    src: url(/assets/fonts/NunitoSans-Bold.ttf);
+}
+
+a {
+  text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}

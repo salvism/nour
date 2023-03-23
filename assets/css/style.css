@@ -1,0 +1,117 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Nunito400";
+  line-height: 1.8;
+  color: #666;
+}
+
+@font-face {
+  font-family: Nunito400;
+  src: url(/assets/fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+  font-family: Nunito600;
+  src: url(/assets/fonts/NunitoSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: Nunito700;
+  src: url(/assets/fonts/NunitoSans-Bold.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-top {
+  background-color: #262626;
+  position: fixed;
+  z-index: 99;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+.header-top img {
+  width: 152px;
+  margin: 1rem;
+}
+.header-top .btn-top {
+  border-radius: 5px;
+  border: none;
+  background-color: #82b440;
+  box-shadow: 0 2px 0 #6f9a37;
+}
+.header-top .btn-top a {
+  color: white;
+  font-size: 14px;
+  padding: 5px 20px;
+  line-height: 2.2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header-top .btn-top:hover {
+  background-color: #7aa93c;
+}
+
+.header-bottom {
+  padding: 10px 95px 0px 70px;
+  border-bottom: 1px solid rgba(247, 243, 243, 0.4);
+  background-color: #fff;
+  position: fixed;
+  z-index: 99;
+  top: 9.5%;
+  left: 0%;
+  right: 0%;
+}
+.header-bottom img {
+  width: 100%;
+}
+.header-bottom .left {
+  width: 147px;
+  height: auto;
+}
+.header-bottom nav li {
+  margin-left: 45px;
+}
+.header-bottom nav li a {
+  color: #333;
+  text-transform: capitalize;
+  font-family: "Nunito700";
+  transition: 0.5s;
+  font-size: 16px;
+  padding: 24px 0 26px;
+  display: block;
+}
+.header-bottom nav li:hover a {
+  color: #6168ff;
+}
+.header-bottom .dropdown .dropdown-item {
+  padding: 5px 12px;
+  font-family: "Nunito600";
+  transition: 0.3s;
+  font-size: 14px;
+  color: #333;
+}
+.header-bottom .dropdown .dropdown-item:hover {
+  background-color: #6168ff;
+  color: white;
+}
+.header-bottom .dropdown:hover .dropdown-menu {
+  display: inline-block;
+}
+.header-bottom .dropdown .dropdown-menu {
+  transition: 0.5s;
+  left: -55px;
+  background-color: #fff;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  border-top: 2px solid #6168ff;
+}/*# sourceMappingURL=style.css.map */
