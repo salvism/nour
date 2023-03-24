@@ -1,7 +1,9 @@
 @import "reset";
 @import "responsive";
 
+// start header
 .header-top {
+  height: 60px;
   background-color: #262626;
   position: fixed;
   z-index: 99;
@@ -41,8 +43,9 @@
   border-bottom: 1px solid rgb(247, 243, 243, 0.4);
   background-color: #fff;
   position: fixed;
+  opacity: .98;
   z-index: 99;
-  top: 9.5%;
+  top: 10.5%;
   left: 0%;
   right: 0%;
   img {
@@ -99,6 +102,207 @@
       border-radius: 4px;
       padding: 10px;
       border-top: 2px solid #6168ff;
+    }
+  }
+}
+// end header
+
+// start main
+// start home section
+#home {
+  margin-top: 90px;
+
+  .slide {
+    background: rgba(0, 0, 0, 0.5);
+    height: 120vh;
+  }
+
+  .bg-img {
+    background-image: url(/assets/images/slider.jpg);
+    background-size: cover;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    min-height: 650px;
+  }
+
+  .text {
+    padding-top: 260px;
+
+    p {
+      color: #fff;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 17px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 55px;
+      margin-bottom: 50px;
+      line-height: 1.4;
+      text-transform: capitalize;
+      font-family: "Nunito700";
+    }
+
+    .btn-home-bg {
+      background-color: #6168ff;
+      border: 2px solid #6168ff;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 13px;
+      padding: 13px 30px;
+      transition: 0.3s;
+      font-family: "Nunito700";
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+        border-color: #ffff;
+      }
+    }
+  }
+
+  .info {
+    padding: 130px 0;
+
+    .box {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-family: "Nunito700";
+        color: #333;
+      }
+
+      p {
+        margin-bottom: 15px;
+      }
+
+      .material-icons {
+        font-size: 60px;
+        color: #6168ff;
+      }
+    }
+
+    .info-img {
+      margin-left: 30px;
+      box-shadow: 18px 18px 26px 0 rgba(0, 1, 1, 0.2);
+      position: relative;
+      img {
+        max-width: 100%;
+        vertical-align: middle;
+      }
+
+      a {
+        background-color: #6168ff;
+        color: #fff;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+
+        &:hover {
+          background-color: #212a42;
+          color: #fff;
+        }
+
+        .material-icons {
+          color: #fff;
+          font-size: 45px;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+
+  .places {
+    padding-bottom: 100px;
+
+    .section-title {
+      margin-bottom: 60px;
+      position: relative;
+
+      span {
+        line-height: 1;
+        top: -10px;
+        position: absolute;
+        text-transform: uppercase;
+        z-index: -1;
+        font-size: 73px;
+        font-family: "Nunito900";
+        color: #efefef;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+
+      h2 {
+        margin-top: 0;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-family: "Nunito700";
+        line-height: 1.3;
+        margin-bottom: 0px;
+        color: #6168ff;
+      }
+
+      p {
+        font-size: 27px;
+        margin-bottom: 0;
+        line-height: 38px;
+        color: #333;
+      }
+    }
+
+    .card {
+      position: relative;
+      border: 1px solid #ebe6de;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+      border-radius: 4px;
+      overflow: hidden;
+      text-align: left;
+      cursor: pointer;
+
+      .card-body {
+        overflow: hidden;
+        padding: 25px 30px;
+        transition: 0.2s;
+        position: absolute;
+        z-index: 11;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        text-align: left;
+
+        h4 {
+          margin-bottom: 7px;
+          font-size: 20px;
+          transition: 0.2s;
+          color: #333;
+          font-family: "Nunito700";
+          display: inline-block;
+        }
+
+        p {
+          color: #727272;
+          text-align: left;
+        }
+
+        span {
+          font-size: 16px;
+          float: right;
+          font-family: "Nunito600";
+        }
+      }
     }
   }
 }
