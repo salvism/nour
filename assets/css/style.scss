@@ -224,8 +224,9 @@
 }
 // end home section
 
-// start top_deals section
-#top_deals {
+#top_deals,
+#service,
+#gallery {
   padding-bottom: 100px;
 
   .section-title {
@@ -264,7 +265,10 @@
       color: #333;
     }
   }
+}
 
+// start top_deals section
+#top_deals {
   .card {
     position: relative;
     border: 1px solid #ebe6de;
@@ -312,45 +316,6 @@
 
 // start service section
 #service {
-  padding-bottom: 100px;
-
-  .section-title {
-    margin-bottom: 60px;
-    position: relative;
-
-    span {
-      line-height: 1;
-      top: -10px;
-      position: absolute;
-      text-transform: uppercase;
-      z-index: -1;
-      font-size: 73px;
-      font-family: "Nunito900";
-      color: #efefef;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-    }
-
-    h2 {
-      margin-top: 0;
-      position: relative;
-      text-transform: uppercase;
-      font-size: 15px;
-      font-family: "Nunito700";
-      line-height: 1.3;
-      margin-bottom: 0px;
-      color: #6168ff;
-    }
-
-    p {
-      font-size: 27px;
-      margin-bottom: 0;
-      line-height: 38px;
-      color: #333;
-    }
-  }
-
   .card {
     margin-bottom: 30px;
     padding: 35px 35px 20px;
@@ -389,4 +354,90 @@
   }
 }
 // end service section
+
+// start gallery section
+#gallery {
+  .portfolio-grid {
+    height: 629.98px;
+
+    .portfolio-item {
+      margin-bottom: 30px;
+
+      .single-gallery {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: rgba(97, 104, 255, 0.8);
+          transition: 0.5s;
+          opacity: 0;
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+
+        &:hover a {
+          color: #fff;
+          text-decoration: none;
+          opacity: 1;
+          right: 20px;
+          bottom: 20px;
+        }
+        img {
+          max-width: 100%;
+        }
+
+        a {
+          background-color: #fff;
+          color: #333;
+          width: 45px;
+          height: 45px;
+          line-height: 46px;
+          position: absolute;
+          right: 0px;
+          bottom: 20px;
+          text-align: center;
+          border-radius: 50%;
+          font-size: 19px;
+          transition: 0.5s;
+          opacity: 0;
+
+          &:hover {
+            background-color: #212a42;
+          }
+
+          &:hover i {
+            color: #fff;
+          }
+        }
+
+        h4 {
+          position: absolute;
+          top: 80%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #ffffff;
+          font-size: 20px;
+          opacity: 0;
+          transition: all 0.3s ease-in-out 0s;
+          letter-spacing: inherit;
+          font-family: "Nunito700";
+          text-align: center;
+        }
+
+        &:hover h4 {
+          opacity: 1;
+          top: 50%;
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+// end gallery section
 // end main

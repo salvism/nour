@@ -220,14 +220,20 @@ ul {
   line-height: 80px;
 }
 
-#top_deals {
+#top_deals,
+#service,
+#gallery {
   padding-bottom: 100px;
 }
-#top_deals .section-title {
+#top_deals .section-title,
+#service .section-title,
+#gallery .section-title {
   margin-bottom: 60px;
   position: relative;
 }
-#top_deals .section-title span {
+#top_deals .section-title span,
+#service .section-title span,
+#gallery .section-title span {
   line-height: 1;
   top: -10px;
   position: absolute;
@@ -240,7 +246,9 @@ ul {
   transform: translateX(-50%);
   width: 100%;
 }
-#top_deals .section-title h2 {
+#top_deals .section-title h2,
+#service .section-title h2,
+#gallery .section-title h2 {
   margin-top: 0;
   position: relative;
   text-transform: uppercase;
@@ -250,12 +258,15 @@ ul {
   margin-bottom: 0px;
   color: #6168ff;
 }
-#top_deals .section-title p {
+#top_deals .section-title p,
+#service .section-title p,
+#gallery .section-title p {
   font-size: 27px;
   margin-bottom: 0;
   line-height: 38px;
   color: #333;
 }
+
 #top_deals .card {
   position: relative;
   border: 1px solid #ebe6de;
@@ -295,42 +306,6 @@ ul {
   font-family: "Nunito600";
 }
 
-#service {
-  padding-bottom: 100px;
-}
-#service .section-title {
-  margin-bottom: 60px;
-  position: relative;
-}
-#service .section-title span {
-  line-height: 1;
-  top: -10px;
-  position: absolute;
-  text-transform: uppercase;
-  z-index: -1;
-  font-size: 73px;
-  font-family: "Nunito900";
-  color: #efefef;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-}
-#service .section-title h2 {
-  margin-top: 0;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-family: "Nunito700";
-  line-height: 1.3;
-  margin-bottom: 0px;
-  color: #6168ff;
-}
-#service .section-title p {
-  font-size: 27px;
-  margin-bottom: 0;
-  line-height: 38px;
-  color: #333;
-}
 #service .card {
   margin-bottom: 30px;
   padding: 35px 35px 20px;
@@ -360,4 +335,76 @@ ul {
 }
 #service .card .card-text p {
   margin-bottom: 15px;
+}
+
+#gallery .portfolio-grid {
+  height: 629.98px;
+}
+#gallery .portfolio-grid .portfolio-item {
+  margin-bottom: 30px;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery {
+  position: relative;
+  overflow: hidden;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 104, 255, 0.8);
+  transition: 0.5s;
+  opacity: 0;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery:hover::before {
+  opacity: 1;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery:hover a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  right: 20px;
+  bottom: 20px;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery img {
+  max-width: 100%;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery a {
+  background-color: #fff;
+  color: #333;
+  width: 45px;
+  height: 45px;
+  line-height: 46px;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 19px;
+  transition: 0.5s;
+  opacity: 0;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery a:hover {
+  background-color: #212a42;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery a:hover i {
+  color: #fff;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery h4 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+  letter-spacing: inherit;
+  font-family: "Nunito700";
+  text-align: center;
+}
+#gallery .portfolio-grid .portfolio-item .single-gallery:hover h4 {
+  opacity: 1;
+  top: 50%;
+  left: 50%;
 }/*# sourceMappingURL=style.css.map */
