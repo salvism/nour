@@ -5,27 +5,28 @@
   font-family: "Nunito400";
   line-height: 1.8;
   color: #666;
+  scroll-behavior: smooth;
 }
 @font-face {
-    font-family: Nunito400;
-    src: url(/assets/fonts/NunitoSans-Regular.ttf);
+  font-family: Nunito400;
+  src: url(/assets/fonts/NunitoSans-Regular.ttf);
 }
 @font-face {
-    font-family: Nunito600;
-    src: url(/assets/fonts/NunitoSans-SemiBold.ttf);
+  font-family: Nunito600;
+  src: url(/assets/fonts/NunitoSans-SemiBold.ttf);
 }
 @font-face {
-    font-family: Nunito700;
-    src: url(/assets/fonts/NunitoSans-Bold.ttf);
+  font-family: Nunito700;
+  src: url(/assets/fonts/NunitoSans-Bold.ttf);
 }
 @font-face {
-    font-family: Nunito900;
-    src: url(/assets/fonts/NunitoSans-Black.ttf);
+  font-family: Nunito900;
+  src: url(/assets/fonts/NunitoSans-Black.ttf);
 }
 
 a {
   text-decoration: none;
 }
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
