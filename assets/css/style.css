@@ -222,18 +222,21 @@ ul {
 
 #top_deals,
 #service,
-#gallery {
+#gallery,
+#package {
   padding-bottom: 100px;
 }
 #top_deals .section-title,
 #service .section-title,
-#gallery .section-title {
+#gallery .section-title,
+#package .section-title {
   margin-bottom: 60px;
   position: relative;
 }
 #top_deals .section-title span,
 #service .section-title span,
-#gallery .section-title span {
+#gallery .section-title span,
+#package .section-title span {
   line-height: 1;
   top: -10px;
   position: absolute;
@@ -248,7 +251,8 @@ ul {
 }
 #top_deals .section-title h2,
 #service .section-title h2,
-#gallery .section-title h2 {
+#gallery .section-title h2,
+#package .section-title h2 {
   margin-top: 0;
   position: relative;
   text-transform: uppercase;
@@ -260,7 +264,8 @@ ul {
 }
 #top_deals .section-title p,
 #service .section-title p,
-#gallery .section-title p {
+#gallery .section-title p,
+#package .section-title p {
   font-size: 27px;
   margin-bottom: 0;
   line-height: 38px;
@@ -407,4 +412,61 @@ ul {
   opacity: 1;
   top: 50%;
   left: 50%;
+}
+
+#package .card {
+  transition: 0.5s;
+  overflow: hidden;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+  border: 1px solid #ebe6de;
+  cursor: pointer;
+}
+#package .card:hover .card-body .package-hover .button {
+  background-color: #212a42;
+}
+#package .card img {
+  width: 100%;
+}
+#package .card .package-hover {
+  position: relative;
+  padding: 10px;
+}
+#package .card .package-hover .button {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: -44px;
+  right: -10px;
+  background-color: #6168ff;
+  display: inline-block;
+  z-index: 9;
+  text-align: center;
+  border-radius: 30px;
+  padding: 9px 18px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+  transition: 0.5s;
+}
+#package .card .package-hover .rating {
+  margin-bottom: 9px;
+}
+#package .card .package-hover .rating i {
+  color: #fec42d;
+  font-size: 13px;
+}
+#package .card .package-hover h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  font-family: "Nunito700";
+  color: #333;
+}
+#package .card .package-hover .pack-bottom span {
+  color: #727272;
+  margin-right: 5px;
+}
+#package .card .package-hover .pack-bottom i {
+  color: #333;
 }/*# sourceMappingURL=style.css.map */
