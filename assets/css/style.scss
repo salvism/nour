@@ -228,7 +228,8 @@
 #service,
 #gallery,
 #package,
-#testimonial {
+#testimonial,
+#blog {
   padding-bottom: 100px;
 
   .section-title {
@@ -626,6 +627,43 @@
     }
   }
 }
-
 // end testimonial section
+
+// start blog section
+#blog {
+  .card {
+    .card-body {
+      padding: 30px 30px 30px;
+      
+      .card-text {
+        margin-right: 10px;
+        color: #333;
+        font-family: "Nunito400";
+        font-size: 14px;
+
+        i {
+          color: #333;
+          padding-right: 3px;
+        }
+      }
+
+      h4 {
+        a {
+          line-height: 32px;
+          margin-bottom: 10px;
+          font-family: "Nunito700";
+          font-size: 24px;
+          transition: 0.5s;
+          color: #333;
+
+          &:hover {
+            color: #6168ff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+// end blog section
 // end main

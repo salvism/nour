@@ -224,14 +224,16 @@ ul {
 #service,
 #gallery,
 #package,
-#testimonial {
+#testimonial,
+#blog {
   padding-bottom: 100px;
 }
 #top_deals .section-title,
 #service .section-title,
 #gallery .section-title,
 #package .section-title,
-#testimonial .section-title {
+#testimonial .section-title,
+#blog .section-title {
   margin-bottom: 60px;
   position: relative;
 }
@@ -239,7 +241,8 @@ ul {
 #service .section-title span,
 #gallery .section-title span,
 #package .section-title span,
-#testimonial .section-title span {
+#testimonial .section-title span,
+#blog .section-title span {
   line-height: 1;
   top: -10px;
   position: absolute;
@@ -256,7 +259,8 @@ ul {
 #service .section-title h2,
 #gallery .section-title h2,
 #package .section-title h2,
-#testimonial .section-title h2 {
+#testimonial .section-title h2,
+#blog .section-title h2 {
   margin-top: 0;
   position: relative;
   text-transform: uppercase;
@@ -270,7 +274,8 @@ ul {
 #service .section-title p,
 #gallery .section-title p,
 #package .section-title p,
-#testimonial .section-title p {
+#testimonial .section-title p,
+#blog .section-title p {
   font-size: 27px;
   margin-bottom: 0;
   line-height: 38px;
@@ -572,4 +577,30 @@ ul {
 }
 #testimonial .test-nav button i {
   font-size: 20px;
+}
+
+#blog .card .card-body {
+  padding: 30px 30px 30px;
+}
+#blog .card .card-body .card-text {
+  margin-right: 10px;
+  color: #333;
+  font-family: "Nunito400";
+  font-size: 14px;
+}
+#blog .card .card-body .card-text i {
+  color: #333;
+  padding-right: 3px;
+}
+#blog .card .card-body h4 a {
+  line-height: 32px;
+  margin-bottom: 10px;
+  font-family: "Nunito700";
+  font-size: 24px;
+  transition: 0.5s;
+  color: #333;
+}
+#blog .card .card-body h4 a:hover {
+  color: #6168ff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
