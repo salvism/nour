@@ -469,4 +469,20 @@ ul {
 }
 #package .card .package-hover .pack-bottom i {
   color: #333;
+}
+
+.partner-logo {
+  background-image: url(/assets/images/partner-bg.png);
+  position: relative;
+  padding: 80px 30px;
+  background-color: #6168ff;
+}
+.partner-logo .item {
+  width: 160px;
+  min-height: 1px;
+  margin-right: 30px;
+}
+.partner-logo .item img {
+  width: 100%;
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */

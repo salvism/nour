@@ -511,4 +511,24 @@
   }
 }
 // end package secttion
+
+// start partner-logo
+.partner-logo {
+  background-image: url(/assets/images/partner-bg.png);
+  position: relative;
+  padding: 80px 30px;
+  background-color: #6168ff;
+
+  .item {
+    width: 160px;
+    min-height: 1px;
+    margin-right: 30px;
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}
+// end partner-logo
 // end main
