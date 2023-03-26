@@ -225,7 +225,8 @@ ul {
 #gallery,
 #package,
 #testimonial,
-#blog {
+#blog,
+#contact {
   padding-bottom: 100px;
 }
 #top_deals .section-title,
@@ -233,7 +234,8 @@ ul {
 #gallery .section-title,
 #package .section-title,
 #testimonial .section-title,
-#blog .section-title {
+#blog .section-title,
+#contact .section-title {
   margin-bottom: 60px;
   position: relative;
 }
@@ -242,7 +244,8 @@ ul {
 #gallery .section-title span,
 #package .section-title span,
 #testimonial .section-title span,
-#blog .section-title span {
+#blog .section-title span,
+#contact .section-title span {
   line-height: 1;
   top: -10px;
   position: absolute;
@@ -260,7 +263,8 @@ ul {
 #gallery .section-title h2,
 #package .section-title h2,
 #testimonial .section-title h2,
-#blog .section-title h2 {
+#blog .section-title h2,
+#contact .section-title h2 {
   margin-top: 0;
   position: relative;
   text-transform: uppercase;
@@ -275,7 +279,8 @@ ul {
 #gallery .section-title p,
 #package .section-title p,
 #testimonial .section-title p,
-#blog .section-title p {
+#blog .section-title p,
+#contact .section-title p {
   font-size: 27px;
   margin-bottom: 0;
   line-height: 38px;
@@ -603,4 +608,36 @@ ul {
 #blog .card .card-body h4 a:hover {
   color: #6168ff;
   text-decoration: none;
+}
+
+#contact #contact-form {
+  background-color: #f4f9ff;
+  padding: 55px 40px;
+  border-radius: 4px;
+}
+#contact #contact-form .form-control {
+  padding: 13px 23px;
+  border-radius: 4px;
+  background-color: #fff;
+  border-color: #fff;
+  border-width: 1px;
+  margin-bottom: 30px;
+}
+#contact #contact-form .actions input {
+  background-color: #6168ff;
+  border: 2px solid #6168ff;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  font-family: "Nunito700";
+  border-radius: 4px;
+  display: inline-block;
+}
+#contact #contact-form .actions input:hover {
+  background: #211e3b;
+  border: 2px solid #211e3b;
+  color: #fff;
+  box-shadow: inherit;
 }/*# sourceMappingURL=style.css.map */
