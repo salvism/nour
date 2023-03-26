@@ -31,6 +31,24 @@ ul {
   list-style-type: none;
 }
 
+@media (max-width: 992px) {
+  #style-switcher {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .info-img {
+    width: 100%;
+    left: -30px;
+  }
+  .hidden {
+    display: none;
+  }
+  #package {
+    margin-top: 1500px;
+  }
+}
 .header-top {
   height: 60px;
   background-color: #262626;
